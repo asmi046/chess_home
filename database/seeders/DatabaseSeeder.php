@@ -16,7 +16,9 @@ class DatabaseSeeder extends Seeder
         $this->call(
             [
                 SectionSeeder::class,
-                FlatSeeder::class,
+                FlatSeeder1::class,
+                FlatSeeder2::class,
+                FlatSeeder3::class,
             ]
         );
 
