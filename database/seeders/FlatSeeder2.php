@@ -509,7 +509,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 64.2,
                 'price_per_meter' => 250236,
                 'price_total' => 16065180
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 7,
@@ -520,7 +520,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 50.6,
                 'price_per_meter' => 249776,
                 'price_total' => 12638700
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 7,
@@ -531,7 +531,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 36.2,
                 'price_per_meter' => 259953,
                 'price_total' => 9410320
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 7,
@@ -542,7 +542,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 35.6,
                 'price_per_meter' => 280617,
                 'price_total' => 9990000
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 7,
@@ -553,7 +553,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 50.2,
                 'price_per_meter' => 260240,
                 'price_total' => 9990000
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 7,
@@ -564,7 +564,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 30.6,
                 'price_per_meter' => 280621,
                 'price_total' => 8587020
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 7,
@@ -575,7 +575,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 31.7,
                 'price_per_meter' => 270567,
                 'price_total' => 8577000
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 7,
@@ -586,7 +586,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 61.9,
                 'price_per_meter' => 230488,
                 'price_total' => 14267250
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 7,
@@ -597,7 +597,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 30.9,
                 'price_per_meter' => 270043,
                 'price_total' => 8344350
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 7,
@@ -608,7 +608,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 64.2,
                 'price_per_meter' => 250236,
                 'price_total' => 16065180
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 8,
@@ -619,7 +619,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 50.6,
                 'price_per_meter' => 260528,
                 'price_total' => 13182750
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 8,
@@ -630,7 +630,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 36.2,
                 'price_per_meter' => 270282,
                 'price_total' => 9784240
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 8,
@@ -641,7 +641,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 35.6,
                 'price_per_meter' => 290730,
                 'price_total' => 10350000
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 8,
@@ -652,7 +652,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 50.2,
                 'price_per_meter' => 270044,
                 'price_total' => 13556220
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 8,
@@ -663,7 +663,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 30.6,
                 'price_per_meter' => 285770,
                 'price_total' => 8744580
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 8,
@@ -674,7 +674,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 31.7,
                 'price_per_meter' => 280529,
                 'price_total' => 8892780
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 8,
@@ -685,7 +685,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 61.9,
                 'price_per_meter' => 240431,
                 'price_total' => 14882700
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 8,
@@ -696,7 +696,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 30.9,
                 'price_per_meter' => 291475,
                 'price_total' => 9006600
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 8,
@@ -707,7 +707,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 64.2,
                 'price_per_meter' => 260313,
                 'price_total' => 16712100
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 9,
@@ -718,7 +718,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 50.6,
                 'price_per_meter' => 270453,
                 'price_total' => 13684950
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 9,
@@ -729,7 +729,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 36.2,
                 'price_per_meter' => 280612,
                 'price_total' => 10158160
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 9,
@@ -740,7 +740,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 35.6,
                 'price_per_meter' => 300000,
                 'price_total' => 10680000
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 9,
@@ -751,7 +751,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 50.2,
                 'price_per_meter' => 280739,
                 'price_total' => 14093100
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 9,
@@ -762,7 +762,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 30.6,
                 'price_per_meter' => 300359,
                 'price_total' => 9191000
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 9,
@@ -773,7 +773,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 31.7,
                 'price_per_meter' => 290488,
                 'price_total' => 9208500
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 9,
@@ -784,7 +784,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 61.9,
                 'price_per_meter' => 250373,
                 'price_total' => 15498150
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 9,
@@ -795,7 +795,7 @@ class FlatSeeder2 extends Seeder
                 'area3' => 30.9,
                 'price_per_meter' => 300564,
                 'price_total' => 9287430
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 9,
@@ -806,104 +806,104 @@ class FlatSeeder2 extends Seeder
                 'area3' => 64.2,
                 'price_per_meter' => 270389,
                 'price_total' => 17359020
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 10,
                 'number' => 73,
                 'type' => "Е2",
-                'area1' => ,
-                'area2' => ,
-                'area3' => ,
-                'price_per_meter' => ,
+                'area1' => 21.5,
+                'area2' => 38.1,
+                'area3' => 50.6,
+                'price_per_meter' => 278724,
                 'price_total' => 14103450
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 10,
                 'number' => 74,
                 'type' => "1 комнотная",
-                'area1' => ,
-                'area2' => ,
-                'area3' => ,
-                'price_per_meter' => ,
+                'area1' => 11.3,
+                'area2' => 29.0,
+                'area3' => 36.2,
+                'price_per_meter' => 294094,
                 'price_total' => 10469760
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 10,
                 'number' => 75,
                 'type' => "Студия",
-                'area1' => ,
-                'area2' => ,
-                'area3' => ,
-                'price_per_meter' => ,
+                'area1' => 12.6,
+                'area2' => 27.6,
+                'area3' => 35.6,
+                'price_per_meter' => 308426,
                 'price_total' => 10980000
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 10,
                 'number' => 76,
                 'type' => "Е2",
-                'area1' => ,
-                'area2' => ,
-                'area3' => ,
-                'price_per_meter' => ,
+                'area1' => 29.2,
+                'area2' => 42.4,
+                'area3' => 50.2,
+                'price_per_meter' => 289651,
                 'price_total' => 14540500
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 10,
                 'number' => 77,
                 'type' => "Студия",
-                'area1' => ,
-                'area2' => ,
-                'area3' => ,
-                'price_per_meter' => ,
+                'area1' => 9.9,
+                'area2' => 24.4,
+                'area3' => 30.6,
+                'price_per_meter' => 308941,
                 'price_total' => 9453600
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 10,
                 'number' => 78,
                 'type' => "Студия",
-                'area1' => ,
-                'area2' => ,
-                'area3' => ,
-                'price_per_meter' => ,
+                'area1' => 13.0,
+                'area2' => 24.0,
+                'area3' => 31.7,
+                'price_per_meter' => 298788,
                 'price_total' => 9471600
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 10,
                 'number' => 79,
                 'type' => "Е3",
-                'area1' => ,
-                'area2' => ,
-                'area3' => ,
-                'price_per_meter' => ,
+                'area1' => 34.3,
+                'area2' => 53.4,
+                'area3' => 61.9,
+                'price_per_meter' => 259412,
                 'price_total' => 16057650
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 10,
                 'number' => 80,
                 'type' => "Студия",
-                'area1' => ,
-                'area2' => ,
-                'area3' => ,
-                'price_per_meter' => ,
+                'area1' => 13.8,
+                'area2' => 24.6,
+                'area3' => 30.9,
+                'price_per_meter' => 311193,
                 'price_total' => 9615870
-            ]
+            ],
             [
                 'state' => "Свободна",
                 'floor' => 10,
                 'number' => 81,
                 'type' => "Е2",
-                'area1' => ,
-                'area2' => ,
-                'area3' => ,
-                'price_per_meter' => ,
+                'area1' => 29.7,
+                'area2' => 49.5,
+                'area3' => 64.2,
+                'price_per_meter' => 278786,
                 'price_total' => 17898120
             ]
         ];
