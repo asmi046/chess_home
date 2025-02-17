@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('state', 70)->default("Свободна")->comment('Статус');
+            $table->foreignId('section_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->integer('floor')->comment('Этаж');
             $table->integer('number')->comment('Номер квартиры');
             $table->string('type', 40)->comment('Тип квартиры');

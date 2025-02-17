@@ -1,0 +1,29 @@
+.main_header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.top_navigation {
+    display: flex;
+    justify-content: space-between;
+
+    .system_logo {
+        padding: 5px;
+        display: flex;
+        span {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 22px;
+            margin: auto auto auto 10px;
+        }
+        img{
+            width:50px;
+            height:50px;
+        }
+    }
+
+    .navbar-menu {
+        margin: auto;
+        flex-grow:unset;
+    }
+}

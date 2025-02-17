@@ -16,9 +16,10 @@ class DatabaseSeeder extends Seeder
         $this->call(
             [
                 SectionSeeder::class,
-                FlatSeeder1::class,
-                FlatSeeder2::class,
-                FlatSeeder3::class,
+                FlatSeeder::class,
+                // FlatSeeder2::class,
+                // FlatSeeder3::class,
+                UserSeeder::class,
             ]
         );
 
