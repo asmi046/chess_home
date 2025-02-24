@@ -2,7 +2,7 @@
 
 $data1 = [
     [
-        'state' => "Свободна",
+
         'floor' => 2,
         'number' => 1,
         'type' => "Е2",
@@ -13,7 +13,7 @@ $data1 = [
         'price_total' => 10629000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 2,
         'number' => 2,
         'type' => "1 комнотная",
@@ -24,7 +24,7 @@ $data1 = [
         'price_total' => 7603040
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 2,
         'number' => 3,
         'type' => "Студия",
@@ -35,7 +35,7 @@ $data1 = [
         'price_total' => 8190000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 2,
         'number' => 4,
         'type' => "Е2",
@@ -46,7 +46,7 @@ $data1 = [
         'price_total' => 11050780
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 2,
         'number' => 5,
         'type' => "Студия",
@@ -57,7 +57,7 @@ $data1 = [
         'price_total' => 7352800
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 2,
         'number' => 6,
         'type' => "Студия",
@@ -68,7 +68,7 @@ $data1 = [
         'price_total' => 7629900
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 2,
         'number' => 7,
         'type' => "Е3",
@@ -79,7 +79,7 @@ $data1 = [
         'price_total' => 12364950
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 2,
         'number' => 8,
         'type' => "Студия",
@@ -90,7 +90,7 @@ $data1 = [
         'price_total' => 7417200
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 2,
         'number' => 9,
         'type' => "Е2",
@@ -101,7 +101,7 @@ $data1 = [
         'price_total' => 12830580
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 3,
         'number' => 10,
         'type' => "Е2",
@@ -112,7 +112,7 @@ $data1 = [
         'price_total' => 11132100
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 3,
         'number' => 11,
         'type' => "1 комнотная",
@@ -123,7 +123,7 @@ $data1 = [
         'price_total' => 7976960
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 3,
         'number' => 12,
         'type' => "Студия",
@@ -134,7 +134,7 @@ $data1 = [
         'price_total' => 8550000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 3,
         'number' => 13,
         'type' => "Е2",
@@ -145,7 +145,7 @@ $data1 = [
         'price_total' => 11542920
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 3,
         'number' => 14,
         'type' => "Студия",
@@ -156,7 +156,7 @@ $data1 = [
         'price_total' => 7352800
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 3,
         'number' => 15,
         'type' => "Студия",
@@ -167,7 +167,7 @@ $data1 = [
         'price_total' => 7919310
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 3,
         'number' => 16,
         'type' => "Е3",
@@ -178,7 +178,7 @@ $data1 = [
         'price_total' => 13008375
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 3,
         'number' => 17,
         'type' => "Студия",
@@ -189,7 +189,7 @@ $data1 = [
         'price_total' => 7417200
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 3,
         'number' => 18,
         'type' => "Е2",
@@ -200,7 +200,7 @@ $data1 = [
         'price_total' => 14124420
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 4,
         'number' => 19,
         'type' => "Е2",
@@ -211,7 +211,7 @@ $data1 = [
         'price_total' => 11634300
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 4,
         'number' => 20,
         'type' => "1 комнотная",
@@ -222,7 +222,7 @@ $data1 = [
         'price_total' => 8319720
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 4,
         'number' => 21,
         'type' => "Студия",
@@ -233,7 +233,7 @@ $data1 = [
         'price_total' => 8910000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 4,
         'number' => 22,
         'type' => "Е2",
@@ -244,7 +244,7 @@ $data1 = [
         'price_total' => 12057430
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 4,
         'number' => 23,
         'type' => "Студия",
@@ -255,7 +255,7 @@ $data1 = [
         'price_total' => 7667920
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 4,
         'number' => 24,
         'type' => "Студия",
@@ -266,7 +266,7 @@ $data1 = [
         'price_total' => 8235030
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 4,
         'number' => 25,
         'type' => "Е3",
@@ -277,7 +277,7 @@ $data1 = [
         'price_total' => 13651800
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 4,
         'number' => 26,
         'type' => "Студия",
@@ -288,7 +288,7 @@ $data1 = [
         'price_total' => 7735080
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 4,
         'number' => 27,
         'type' => "Е2",
@@ -299,7 +299,7 @@ $data1 = [
         'price_total' => 14771340
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 5,
         'number' => 28,
         'type' => "Е2",
@@ -310,7 +310,7 @@ $data1 = [
         'price_total' => 11634300
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 5,
         'number' => 29,
         'type' => "1 комнотная",
@@ -321,7 +321,7 @@ $data1 = [
         'price_total' => 8693640
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 5,
         'number' => 30,
         'type' => "Студия",
@@ -332,7 +332,7 @@ $data1 = [
         'price_total' => 9255000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 5,
         'number' => 31,
         'type' => "Е2",
@@ -343,7 +343,7 @@ $data1 = [
         'price_total' => 12079800
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 5,
         'number' => 32,
         'type' => "Студия",
@@ -354,7 +354,7 @@ $data1 = [
         'price_total' => 7956780
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 5,
         'number' => 33,
         'type' => "Студия",
@@ -365,7 +365,7 @@ $data1 = [
         'price_total' => 8235030
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 5,
         'number' => 34,
         'type' => "Е3",
@@ -376,7 +376,7 @@ $data1 = [
         'price_total' => 13623825
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 5,
         'number' => 35,
         'type' => "Студия",
@@ -387,7 +387,7 @@ $data1 = [
         'price_total' => 8026470
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 5,
         'number' => 36,
         'type' => "Е2",
@@ -398,7 +398,7 @@ $data1 = [
         'price_total' => 15418260
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 6,
         'number' => 37,
         'type' => "Е2",
@@ -409,7 +409,7 @@ $data1 = [
         'price_total' => 12136500
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 6,
         'number' => 38,
         'type' => "1 комнотная",
@@ -420,7 +420,7 @@ $data1 = [
         'price_total' => 9051980
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 6,
         'number' => 39,
         'type' => "Студия",
@@ -431,7 +431,7 @@ $data1 = [
         'price_total' => 9615000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 6,
         'number' => 40,
         'type' => "Е2",
@@ -442,7 +442,7 @@ $data1 = [
         'price_total' => 12549570
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 6,
         'number' => 41,
         'type' => "Студия",
@@ -453,7 +453,7 @@ $data1 = [
         'price_total' => 8271900
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 6,
         'number' => 42,
         'type' => "Студия",
@@ -464,7 +464,7 @@ $data1 = [
         'price_total' => 8563905
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 6,
         'number' => 43,
         'type' => "Е3",
@@ -475,7 +475,7 @@ $data1 = [
         'price_total' => 14211300
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 6,
         'number' => 44,
         'type' => "Студия",
@@ -486,7 +486,7 @@ $data1 = [
         'price_total' => 8344350
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 6,
         'number' => 45,
         'type' => "Е2",
@@ -497,7 +497,7 @@ $data1 = [
         'price_total' => 16065180
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 7,
         'number' => 46,
         'type' => "Е2",
@@ -508,7 +508,7 @@ $data1 = [
         'price_total' => 12638700
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 7,
         'number' => 47,
         'type' => "1 комнотная",
@@ -519,7 +519,7 @@ $data1 = [
         'price_total' => 9410320
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 7,
         'number' => 48,
         'type' => "Студия",
@@ -530,7 +530,7 @@ $data1 = [
         'price_total' => 9990000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 7,
         'number' => 49,
         'type' => "Е2",
@@ -541,7 +541,7 @@ $data1 = [
         'price_total' => 13064080
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 7,
         'number' => 50,
         'type' => "Студия",
@@ -552,7 +552,7 @@ $data1 = [
         'price_total' => 8587020
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 7,
         'number' => 51,
         'type' => "Студия",
@@ -563,7 +563,7 @@ $data1 = [
         'price_total' => 8577000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 7,
         'number' => 52,
         'type' => "Е3",
@@ -574,7 +574,7 @@ $data1 = [
         'price_total' => 14267250
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 7,
         'number' => 53,
         'type' => "Студия",
@@ -585,7 +585,7 @@ $data1 = [
         'price_total' => 8344350
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 7,
         'number' => 54,
         'type' => "Е2",
@@ -596,7 +596,7 @@ $data1 = [
         'price_total' => 16065180
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 8,
         'number' => 55,
         'type' => "Е2",
@@ -607,7 +607,7 @@ $data1 = [
         'price_total' => 13182750
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 8,
         'number' => 56,
         'type' => "1 комнотная",
@@ -618,7 +618,7 @@ $data1 = [
         'price_total' => 9784240
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 8,
         'number' => 57,
         'type' => "Студия",
@@ -629,7 +629,7 @@ $data1 = [
         'price_total' => 10350000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 8,
         'number' => 58,
         'type' => "Е2",
@@ -640,7 +640,7 @@ $data1 = [
         'price_total' => 13556220
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 8,
         'number' => 59,
         'type' => "Студия",
@@ -651,7 +651,7 @@ $data1 = [
         'price_total' => 8744580
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 8,
         'number' => 60,
         'type' => "Студия",
@@ -662,7 +662,7 @@ $data1 = [
         'price_total' => 8892780
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 8,
         'number' => 61,
         'type' => "Е3",
@@ -673,7 +673,7 @@ $data1 = [
         'price_total' => 14882700
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 8,
         'number' => 62,
         'type' => "Студия",
@@ -684,7 +684,7 @@ $data1 = [
         'price_total' => 9006600
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 8,
         'number' => 63,
         'type' => "Е2",
@@ -695,7 +695,7 @@ $data1 = [
         'price_total' => 16712100
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 9,
         'number' => 64,
         'type' => "Е2",
@@ -706,7 +706,7 @@ $data1 = [
         'price_total' => 13684950
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 9,
         'number' => 65,
         'type' => "1 комнотная",
@@ -717,7 +717,7 @@ $data1 = [
         'price_total' => 10158160
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 9,
         'number' => 66,
         'type' => "Студия",
@@ -728,7 +728,7 @@ $data1 = [
         'price_total' => 10680000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 9,
         'number' => 67,
         'type' => "Е2",
@@ -739,7 +739,7 @@ $data1 = [
         'price_total' => 14093100
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 9,
         'number' => 68,
         'type' => "Студия",
@@ -750,7 +750,7 @@ $data1 = [
         'price_total' => 9191000
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 9,
         'number' => 69,
         'type' => "Студия",
@@ -761,7 +761,7 @@ $data1 = [
         'price_total' => 9208500
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 9,
         'number' => 70,
         'type' => "Е3",
@@ -772,7 +772,7 @@ $data1 = [
         'price_total' => 15498150
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 9,
         'number' => 71,
         'type' => "Студия",
@@ -783,7 +783,7 @@ $data1 = [
         'price_total' => 9287430
     ],
     [
-        'state' => "Свободна",
+
         'floor' => 9,
         'number' => 72,
         'type' => "Е2",

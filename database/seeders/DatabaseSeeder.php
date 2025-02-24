@@ -15,11 +15,12 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(
             [
+                UserSeeder::class,
                 SectionSeeder::class,
                 FlatSeeder::class,
                 // FlatSeeder2::class,
                 // FlatSeeder3::class,
-                UserSeeder::class,
+
             ]
         );
 

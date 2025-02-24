@@ -53,8 +53,8 @@ class AuthController extends Controller
     }
 
     public function login(LoginFormRequest $request) {
-        $user_data = $request->validated();
 
+        $user_data = $request->validated();
 
         if(auth('web')->attempt($user_data)) {
             return redirect(route('home'));

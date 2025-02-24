@@ -23,21 +23,57 @@ class FlatSeeder extends Seeder
             $item['created_at'] = now();
             $item['created_at'] = now();
             $item['section_id'] = 1;
-            $userID = DB::table("flats")->insertGetId($item);
+
+            $flatID = DB::table("flats")->insertGetId($item);
+
+            if (rand(0,1))
+            {
+                DB::table("fixations")->insertGetId([
+                   'user_id' => rand(1,3),
+                   'flat_id' => $flatID,
+                   'type' => (rand(0,1))?"Забронирована":"Продана",
+                   'client_name' => 'Иванов',
+                   'price' => $item['price_total'],
+                ]);
+            }
         }
 
         foreach ( $data2 as $item) {
             $item['created_at'] = now();
             $item['created_at'] = now();
             $item['section_id'] = 2;
-            $userID = DB::table("flats")->insertGetId($item);
+
+            $flatID = DB::table("flats")->insertGetId($item);
+
+            if (rand(0,1))
+            {
+                DB::table("fixations")->insertGetId([
+                   'user_id' => rand(1,3),
+                   'flat_id' => $flatID,
+                   'type' => (rand(0,1))?"Забронирована":"Продана",
+                   'client_name' => 'Иванов',
+                   'price' => $item['price_total'],
+                ]);
+            }
         }
 
         foreach ( $data3 as $item) {
             $item['created_at'] = now();
             $item['created_at'] = now();
             $item['section_id'] = 3;
-            $userID = DB::table("flats")->insertGetId($item);
+
+            $flatID = DB::table("flats")->insertGetId($item);
+
+            if (rand(0,1))
+            {
+                DB::table("fixations")->insertGetId([
+                   'user_id' => rand(1,3),
+                   'flat_id' => $flatID,
+                   'type' => (rand(0,1))?"Забронирована":"Продана",
+                   'client_name' => 'Иванов',
+                   'price' => $item['price_total'],
+                ]);
+            }
         }
     }
 }

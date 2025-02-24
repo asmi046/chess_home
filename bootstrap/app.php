@@ -18,6 +18,9 @@ return Application::configure(basePath: dirname(__DIR__))
 
             Route::middleware('web')
                 ->group(base_path('routes/chess.php'));
+
+            Route::middleware('web')
+                ->group(base_path('routes/fixation.php'));
         }
     )
     ->withMiddleware(function (Middleware $middleware) {

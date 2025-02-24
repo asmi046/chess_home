@@ -22,7 +22,7 @@ section{
     padding-bottom: $section_space;
 }
 
-.container{
+.container_main{
     width:100%;
     max-width: $conteiner_max_w;
     margin: 0 auto;
@@ -65,14 +65,99 @@ input:-webkit-autofill:active{
 
 
 @media (max-width: 1440px) {
-    .container {
-        width: 96%;
+    .container_main {
+        width: 98%;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
+
+.h_rezerv {
+    background-color: #FFFF007A;
+}
+
+.h_rezerv_ruk {
+    background-color: #FF00007A;
+}
+
+.h_sales {
+    background-color: #00FF007A;
+}
+
+
+.user_icon_menu {
+
+    position: relative;
+
+    .user_data {
+        display: flex;
+        gap:10px;
+        .icon {
+            width:40px;
+            height:40px;
+            border-radius: 40px;
+            background-color: $gray_border_color;
+            overflow: hidden;
+            margin: auto 0 auto 10px;
+            cursor:pointer;
+            border:1px solid $gray_border_color;
+
+
+            img {
+                object-fit: contain;
+
+            }
+
+
+
+        }
+
+        span {
+            margin: auto 0 auto 0;
+        }
+    }
+
+    .menu {
+        position:absolute;
+        width:100px;
+        height:100px;
+        display: none;
+        z-index: 1000;
+        right: 0;
+        ul {
+            margin-top: 10px;
+            background-color: white;
+            width:100%;
+            border:1px solid $gray_border_color;
+            border-radius: 5px;
+            li {
+                padding: 5px 15px;
+                text-align: right;
+            }
+
+            a:hover {
+                color:  $main_color;
+            }
+        }
+    }
+
+    &:hover .menu {
+        display: block;
+    }
+
+}
+
+.empty_h2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+@import "scroll";
 @import "top_navigation";
+@import "dashboard";
+@import "flat_edit_window";
 
 // Схема с сайдбаром
 // @import "sidebar-schem";

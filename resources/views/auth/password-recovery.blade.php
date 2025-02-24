@@ -1,4 +1,4 @@
-@extends('layouts.all')
+@extends('layouts.login')
 
 @php
     $title = "Восстановление пароля";

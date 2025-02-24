@@ -1,16 +1,9 @@
 @extends('layouts.all')
 
-@php
-    $title = "";
-    $description = "";
-@endphp
-
-@section('title', $title)
-@section('description', $description)
+@section('title_force', "Шахматка по секциям")
+@section('description_force', "Шахматка по секциям")
 
 @section('main')
-
-
     <chess></chess>
 @endsection
 

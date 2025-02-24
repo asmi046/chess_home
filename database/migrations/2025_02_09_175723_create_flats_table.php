@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('flats', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('state', 70)->default("Свободна")->comment('Статус');
             $table->foreignId('section_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->integer('floor')->comment('Этаж');
             $table->integer('number')->comment('Номер квартиры');

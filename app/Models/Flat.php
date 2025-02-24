@@ -3,12 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Flat extends Model
 {
     public $fillable = [
-        'state',
         'section_id',
         'floor',
         'number',
@@ -20,9 +21,15 @@ class Flat extends Model
         'price_total',
     ];
 
+    protected $with = ['fixation', 'section'];
 
     public function section(): BelongsTo
     {
         return $this->belongsTo(Section::class);
+    }
+
+    public function fixation(): HasOne
+    {
+        return $this->hasOne(Fixation::class);
     }
 }

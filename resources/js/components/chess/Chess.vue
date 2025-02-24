@@ -1,8 +1,9 @@
 <template>
-    <section class="control_selection" >
-        <div class="container">
-            <div class="box">
+    <EditWindow :show="showEdit" :flat="selectedFlat" :hide="cloaseEdit" ></EditWindow>
 
+    <section class="control_selection" >
+        <div class="container_main">
+            <div class="box selector_wrapper">
                 <div class="field">
                     <label class="label">Секции</label>
                         <div  class="select is-success">
@@ -10,20 +11,60 @@
                                 <option value="0" disabled selected>Выберите секцию</option>
                                 <option v-for="item in sectionList" :key="item.id" :value="item.id">{{ item.name }}</option>
                             </select>
+                        </div>
+                </div>
+
+                <div class="history">
+                    <div class="h">
+                        <div class="cube h_free"></div>
+                        <span>Свободна</span>
+                    </div>
+
+                    <div class="h">
+                        <div class="cube h_rezerv"></div>
+                        <span>Резерв</span>
+                    </div>
+
+                    <div class="h">
+                        <div class="cube h_rezerv_ruk"></div>
+                        <span>Резерв руководителя</span>
+                    </div>
+
+                    <div class="h">
+                        <div class="cube h_sales"></div>
+                        <span>Продана</span>
                     </div>
                 </div>
             </div>
 
             <progress v-show="loadet" class="progress is-small is-primary" max="100">15%</progress>
+
+            <h2 class="empty_h2" v-show="flatList.length == 0 && loadet == false">Выберите секцию для отображения шахматки</h2>
+
+            <div class="dashboard">
+                <div v-for="(item, key, index) in flatList" :key="index" class="flor">
+                    <div class="cell cell_flor_index">
+                        <span>{{ key }}</span>
+                    </div>
+
+                    <Flat @click.prevent="selectFlat(flat)" v-for="(flat, key, index) in item" :key="index" :flat="flat"></Flat>
+
+                </div>
+            </div>
         </div>
     </section>
 </template>
 
 <script setup>
     import { ref, watch } from 'vue'
+    import Flat from './Flat.vue'
+    import EditWindow from './EditWindow.vue'
+
     var loadet = ref(true)
     var sectionList = ref([])
     var selectSection = ref(0)
+    var selectedFlat = ref(null)
+    var showEdit = ref(false)
 
     var flatList = ref([])
 
@@ -60,6 +101,16 @@
             console.log(error)
             loadet.value = false
         });
+    }
+
+    const selectFlat = (flat) => {
+        selectedFlat.value = flat
+        showEdit.value = true;
+    }
+
+    const cloaseEdit = () => {
+        selectedFlat.value = null
+        showEdit.value = false;
     }
 
     getSectionList()

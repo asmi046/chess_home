@@ -1,12 +1,10 @@
-@extends('layouts.all')
+@extends('layouts.login')
 
-@php
-    $title = "Авторизия";
-    $description = "Страница авторизации";
-@endphp
 
-@section('title', $title)
-@section('description', $description)
+
+
+@section('title_force', "Вход в дашборд")
+@section('description_force', "Вход в дашборд")
 
 @section('main')
 
