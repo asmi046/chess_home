@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Fixation extends Model
 {
     public $fillable = [
+        'user_id',
+        'flat_id',
         'type',
         'client_name',
         'client_phone',

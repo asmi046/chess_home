@@ -109,8 +109,9 @@
     }
 
     const cloaseEdit = () => {
-        selectedFlat.value = null
+        // selectedFlat.value = null
         showEdit.value = false;
+        getChessList();
     }
 
     getSectionList()
