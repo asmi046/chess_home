@@ -7,7 +7,7 @@
 // @import "burger-icon";
 // @import "standart";
 // @import "form/all-form";
-// @import "elements/all-elements";
+@import "elements/all-elements";
 
 body{
     font-family: $main_fonts;
@@ -62,6 +62,9 @@ input:-webkit-autofill:active{
 }
 
 
+.win_wrapper {
+    border-radius: 0;
+}
 
 
 @media (max-width: 1440px) {
@@ -89,7 +92,7 @@ input:-webkit-autofill:active{
 .user_icon_menu {
 
     position: relative;
-
+    margin: auto 0 auto 20px;
     .user_data {
         display: flex;
         gap:10px;

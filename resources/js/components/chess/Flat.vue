@@ -1,6 +1,11 @@
 <template>
 
-<div :class="{ 'h_rezerv': props.flat.fixation && props.flat.fixation.type === 'Забронирована', 'h_sales': props.flat.fixation && props.flat.fixation.type === 'Продана' }" class="cell cell_flat">
+<div
+    :class="{
+        'h_rezerv': props.flat.fixation && props.flat.fixation.type === 'Забронирована',
+        'h_rezerv_ruk': props.flat.fixation && props.flat.fixation.type === 'Бронь руководителя',
+        'h_sales': props.flat.fixation && props.flat.fixation.type === 'Продана'
+        }" class="cell cell_flat">
     <div class="head">
         <span class="flat_number">{{ props.flat.number  }}</span>
         <span class="flat_type">{{ props.flat.type }}</span>

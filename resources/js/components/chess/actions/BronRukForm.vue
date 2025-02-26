@@ -15,7 +15,9 @@
             <div class="field">
                 <label class="label is-small">Телефон клиента</label>
                 <div class="control">
-                    <input v-model="model.client_phone" class="input is-small" type="text" placeholder="Введите имя">
+                    <input
+                    v-mask="{mask: '+7 (NNN) NNN-NN-NN', model: 'cpf' }"
+                    v-model="model.client_phone" class="input is-small" type="text" placeholder="+7 (___) ___-__-__">
                 </div>
             </div>
         </div>
@@ -26,7 +28,7 @@
             <div class="field">
                 <label class="label is-small">ДДУ</label>
                 <div class="control">
-                    <input v-model="model.ddu" class="input is-small" type="text" placeholder="Введите имя">
+                    <input v-model="model.ddu" class="input is-small" type="text" placeholder="Введите ДДУ">
                 </div>
             </div>
         </div>
@@ -35,7 +37,7 @@
             <div class="field">
                 <label class="label is-small">Цена</label>
                 <div class="control">
-                    <input v-model="model.price" class="input is-small" type="text" placeholder="Введите имя">
+                    <input v-model="model.price" class="input is-small" type="text" placeholder="Введите цену">
                 </div>
             </div>
         </div>

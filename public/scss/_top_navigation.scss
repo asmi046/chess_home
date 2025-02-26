@@ -23,7 +23,13 @@
     }
 
     .navbar-menu {
-        margin: auto;
+        margin: auto 0 auto auto;
         flex-grow:unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .top_navigation {
+        display: unset;
     }
 }

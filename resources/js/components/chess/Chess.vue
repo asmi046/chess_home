@@ -27,7 +27,7 @@
 
                     <div class="h">
                         <div class="cube h_rezerv_ruk"></div>
-                        <span>Резерв руководителя</span>
+                        <span>Руководитель</span>
                     </div>
 
                     <div class="h">
@@ -46,8 +46,10 @@
                     <div class="cell cell_flor_index">
                         <span>{{ key }}</span>
                     </div>
+                    <div class="flor_flat_list">
+                        <Flat @click.prevent="selectFlat(flat)" v-for="(flat, key, index) in item" :key="index" :flat="flat"></Flat>
+                    </div>
 
-                    <Flat @click.prevent="selectFlat(flat)" v-for="(flat, key, index) in item" :key="index" :flat="flat"></Flat>
 
                 </div>
             </div>

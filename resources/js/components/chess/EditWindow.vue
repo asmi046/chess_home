@@ -2,38 +2,44 @@
     <div :class="{'is-active':props.show}" class="modal">
         <div class="modal-background"></div>
         <div class="modal-content flat_edit_window">
-            <div class="box ">
-                <div v-if="props.flat" :class="{ 'h_rezerv': props.flat && props.flat.fixation && props.flat.fixation.type === 'Забронирована', 'h_sales': props.flat && props.flat.fixation && props.flat.fixation.type === 'Продана' }" class="flat_modal_data">
-                    <p><strong>Квартира №:</strong> {{ props.flat.number }}</p>
-                    <p><strong>{{ props.flat.section.name }}</strong> </p>
-                    <p><strong>Статус:</strong> {{ (props.flat.fixation)?props.flat.fixation.type:"Свободна" }}  </p>
-                    <p><strong>Площадь:</strong> {{ props.flat.area1 }} / {{ props.flat.area2 }} / {{ props.flat.area3 }} м²</p>
-                    <p><strong>Цена:</strong> {{ props.flat.price_total }}  ₽</p>
-                </div>
+            <div class="box win_wrapper">
 
-                <div v-show="!finishAction" class="action_wrapper">
-                    <div class="field">
-                    <label class="label is-small">Выберите действие</label>
-                        <div  class="select is-success is-small">
-                            <select v-model="action">
-                                <option value="" disabled selected>Выберите действие</option>
-                                <option v-for="(item, index) in actionList" :key="index" :value="item">{{ item }}</option>
-                            </select>
-                        </div>
+                    <div v-if="props.flat"
+                        :class="{
+                            'h_rezerv': props.flat && props.flat.fixation && props.flat.fixation.type === 'Забронирована',
+                            'h_rezerv_ruk': props.flat && props.flat.fixation && props.flat.fixation.type === 'Бронь руководителя',
+                            'h_sales': props.flat && props.flat.fixation && props.flat.fixation.type === 'Продана'
+                        }"
+                        class="h_white flat_modal_data">
+                        <p><strong>Квартира №:</strong> {{ props.flat.number }}</p>
+                        <p><strong>{{ props.flat.section.name }}</strong> </p>
+                        <p><strong>Статус:</strong> {{ (props.flat.fixation)?props.flat.fixation.type:"Свободна" }}  </p>
+                        <p><strong>Площадь:</strong> {{ props.flat.area1 }} / {{ props.flat.area2 }} / {{ props.flat.area3 }} м²</p>
+                        <p><strong>Цена:</strong> {{ props.flat.price_total }}  ₽</p>
                     </div>
 
+                    <div v-show="!finishAction" class="action_wrapper">
+                        <div class="field">
+                        <label class="label is-small">Выберите действие</label>
+                            <div  class="select is-success is-small">
+                                <select v-model="action">
+                                    <option value="" disabled selected>Выберите действие</option>
+                                    <option v-for="(item, index) in actionList" :key="index" :value="item">{{ item }}</option>
+                                </select>
+                            </div>
+                        </div>
 
 
-                    <ClearSales v-if="action == 'Отменить продажу'" :flat="props.flat" :action="clearAction"></ClearSales>
-                    <ClearBron v-if="action == 'Снять бронь'" :flat="props.flat" :action="clearAction"></ClearBron>
-                    <BronRukForm v-if="action == 'Бронь руководителя'" :flat="props.flat" :action="fixationAction" v-model="fixationData"></BronRukForm>
-                </div>
-                <div v-show="finishAction" :class="{'is-success':actionSuccess,'is-danger':!actionSuccess}" class="notification">
-                    <button @click.prevent="props.hide()" class="delete"></button>
-                    {{ actionMeaasge }}
-                </div>
 
-                <!-- <FixationForm></FixationForm> -->
+                        <ClearSales v-if="action == 'Отменить продажу'" :flat="props.flat" :action="clearAction"></ClearSales>
+                        <ClearBron v-if="action == 'Снять бронь'" :flat="props.flat" :action="clearAction"></ClearBron>
+                        <BronRukForm v-if="action == 'Бронь руководителя'" :flat="props.flat" :action="fixationAction" v-model="fixationData"></BronRukForm>
+                    </div>
+                    <div v-show="finishAction" :class="{'is-success':actionSuccess,'is-danger':!actionSuccess}" class="notification">
+                        <button @click.prevent="props.hide()" class="delete"></button>
+                        {{ actionMeaasge }}
+                    </div>
+
 
             </div>
         </div>

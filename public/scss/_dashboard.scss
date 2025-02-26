@@ -39,6 +39,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        .flor_flat_list {
+            display: flex;
+            flex:1;
+            flex-wrap: wrap;
+            gap: $gap_dashboard;
+        }
+
         .cell{
             min-height: 100px;
             cursor:pointer;
@@ -53,7 +60,7 @@
 
             &_flat {
                 font-size: .7em;
-                width:110px;
+                width:120px;
                 border-radius: $border_rad;
                 overflow: hidden;
                 box-shadow: $box_shadow;
@@ -85,6 +92,52 @@
                     text-align: right;
                 }
             }
+        }
+    }
+
+
+}
+
+
+
+@media (max-width: 768px) {
+    .dashboard .flor {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $gray_border_color
+    }
+
+}
+
+@media (max-width: 620px) {
+    .dashboard .flor {
+        flex-direction: column;
+        .flor_flat_list {
+            justify-content: space-between;
+        }
+
+        .cell_flat {
+            width: 45%;
+        }
+        .cell_flor_index {
+            min-height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    }
+
+    .selector_wrapper {
+        flex-direction: column;
+        gap: 10px;
+        .history {
+            justify-content: start;
+            gap:20px;
+            .h {
+                font-size: 12px;
+            }
+
+
         }
     }
 

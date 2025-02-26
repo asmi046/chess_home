@@ -38,10 +38,18 @@
 <body>
     <header class="main_header">
         <div class="container_main is-full">
-            <div class="top_navigation">
-                <div class="system_logo">
-                    <img src="{{ asset('img/logo.svg') }}" alt="">
-                    <span>Шахматка</span>
+            <nav class="top_navigation navbar">
+                <div class="navbar-brand">
+                    <a href="{{ route('home') }}" class="system_logo">
+                        <img src="{{ asset('img/logo.svg') }}" alt="">
+                        <span>Шахматка</span>
+                    </a>
+                    <a role="button" class="navbar-burger is-primary" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                      </a>
                 </div>
 
                 <div id="navbarBasicExample" class="navbar-menu">
@@ -50,34 +58,64 @@
                             Квартиры
                         </a>
 
-                        <a class="navbar-item">
-                            Лог
-                        </a>
+                        @can('read_log')
+                            <a href="{{ route('log') }}" class="navbar-item">
+                                Лог
+                            </a>
+                        @endcan
 
-                        <a class="navbar-item">
+
+
+                        <a  href="{{ route('stat') }}" class="navbar-item">
                             Cтатистика
                         </a>
                     </div>
-                </div>
-                <div class="buttons">
-                    <div class="user_icon_menu">
-                        <div class="user_data">
-                            <span>{{ auth()->user()->name }}</span>
-                            <div class="icon">
-                                <img src="{{ asset('img/free_person.svg') }}" alt="{{ auth()->user()->name }}">
+
+                    <div class="buttons navbar-end">
+                        <div class="user_icon_menu">
+                            <div class="user_data">
+                                <span>{{ auth()->user()->name }}</span>
+                                <div class="icon">
+                                    <img src="{{ asset('img/free_person.svg') }}" alt="{{ auth()->user()->name }}">
+                                </div>
+                            </div>
+
+
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="{{ route('cabinet') }}">Кабинет</a></li>
+                                    <li><a href="{{ route('logout') }}">Выйти</a></li>
+                                </ul>
                             </div>
                         </div>
-
-
-                        <div class="menu">
-                            <ul>
-                                <li><a href="{{ route('cabinet') }}">Кабинет</a></li>
-                                <li><a href="{{ route('logout') }}">Выйти</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
+
+                </div>
+            </nav>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+            });
+
+            });
+        </script>
     </header>
     <main id="global_app">
         @yield('main')
