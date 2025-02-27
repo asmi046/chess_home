@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Schedule;
+use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 
@@ -25,7 +25,7 @@ return Application::configure(basePath: dirname(__DIR__))
         }
     )
     ->withSchedule(function (Schedule $schedule) {
-        Schedule::command('chess:clear-fixation')->daily();
+        $schedule->command('chess:clear-fixation')->daily();
     })
     ->withMiddleware(function (Middleware $middleware) {
         //
