@@ -20,17 +20,20 @@ class FixationServices {
                 $listResult[] = 'Продать';
                 $listResult[] = 'Бронь руководителя';
             } elseif ($fixationType === "Забронирована") {
+                $listResult[] = 'Редактировать бронь';
                 $listResult[] = 'Снять бронь';
                 $listResult[] = 'Продать';
             } elseif ($fixationType === "Продана") {
                 $listResult[] = 'Отменить продажу';
+            }elseif ($fixationType === "Бронь руководителя") {
+                $listResult[] = 'Снять бронь руководителя';
             }
         } else {
             if ($fixationType === "") {
                 $listResult[] = 'Бронировать';
                 $listResult[] = 'Продать';
-                $listResult[] = 'Бронь руководителя';
             } elseif (($fixationType === "Забронирована") && ($fixationUser == $userId)) {
+                $listResult[] = 'Редактировать бронь';
                 $listResult[] = 'Снять бронь';
                 $listResult[] = 'Продать';
             }

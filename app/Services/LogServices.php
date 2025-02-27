@@ -12,10 +12,10 @@ class LogServices {
         $adet_data= [
             'event_name' => $action,
             'ip' => $ip,
-            'user_name' => auth()->user()->name,
-            'user_id' => auth()->user()->id,
-            'user_email' => auth()->user()->email,
-            'user_phone' => auth()->user()->phone,
+            'user_name' => auth()->user()->name ?? "Робот",
+            'user_id' => auth()->user()->id ?? 1,
+            'user_email' => auth()->user()->email ?? "mail@mail.ru",
+            'user_phone' => auth()->user()->phone ?? "+7 (000) 000-00-00",
         ];
 
         if ($flat) {

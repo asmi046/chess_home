@@ -151,9 +151,41 @@ input:-webkit-autofill:active{
 
 }
 
+sup {
+    color:red;
+}
+
 .empty_h2 {
     font-weight: bold;
     font-size: 18px;
+}
+
+@media (max-width:768px) {
+    .user_icon_menu {
+        margin: 0;
+        width:100%;
+        border-top: 1px solid $gray_border_color;
+        display: flex;
+        flex-direction: column;
+
+        .user_data {
+            flex-direction: row-reverse;
+            margin: 20px auto 10px 0;
+        }
+
+        .menu {
+            position: relative;
+            display: block;
+            ul {
+                border: none;
+                li {
+                    text-align: left;
+                }
+
+            }
+
+        }
+    }
 }
 
 
@@ -161,6 +193,8 @@ input:-webkit-autofill:active{
 @import "top_navigation";
 @import "dashboard";
 @import "flat_edit_window";
+@import "log";
+@import "pagination";
 
 // Схема с сайдбаром
 // @import "sidebar-schem";

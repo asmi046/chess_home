@@ -21,7 +21,7 @@ class FixationController extends Controller
         $ls->write(action:$action, ip:$request->ip(), flat:$flat);
 
         $adding_data = [
-            'user_id' => auth()->user()->id,
+            'user_id' => $flat->fixation->user_id ?? auth()->user()->id,
             'flat_id' => $flat_id,
             'client_name' => $request->input('client_name'),
             'client_phone' => $request->input('client_phone'),
@@ -34,7 +34,10 @@ class FixationController extends Controller
         if ($action === "Бронировать") $adding_data['type'] = "Забронирована";
         if ($action === "Продать") $adding_data['type'] = "Продана";
 
-        return $flat->fixation()->create($adding_data);
+        if ((($action === "Продать") || ($action === "Редактировать бронь")) && $flat->fixation)
+            return $flat->fixation()->update($adding_data);
+        else
+            return $flat->fixation()->create($adding_data);
     }
 
     public function clear_fixation(Request $request, LogServices $ls) {

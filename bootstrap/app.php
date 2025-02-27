@@ -23,6 +23,9 @@ return Application::configure(basePath: dirname(__DIR__))
                 ->group(base_path('routes/fixation.php'));
         }
     )
+    ->withSchedule(function (Schedule $schedule) {
+        Schedule::command('chess:clear-fixation')->daily();
+    })
     ->withMiddleware(function (Middleware $middleware) {
         //
     })

@@ -1,0 +1,30 @@
+.log_filter  form{
+    display: flex;
+    gap:20px;
+
+    .control {
+        margin-left: auto;
+        display: flex;
+        gap:20px;
+
+    }
+}
+
+.log_table {
+    font-size: 14px;
+}
+
+
+@media (max-width:680px) {
+    .log_filter form {
+        flex-direction: column;
+        select {
+            width: 100%;
+        }
+    }
+
+
+    .log_table {
+        font-size: 12px;
+    }
+}

@@ -15,13 +15,16 @@
             @csrf
 
             <header>
-
+                <div class="system_logo">
+                    <img src="{{ asset('img/logo.svg') }}" alt="">
+                    <span>Шахматка</span>
+                </div>
             </header>
 
             <div class="field">
-              <label class="label">E-mail</label>
+              <label class="label is-small">E-mail</label>
               <div class="control">
-                <input name="email" class="input" type="email" placeholder="e.g. alex@example.com">
+                <input name="email" class="input" type="email" placeholder="name@mail.ru">
               </div>
 
               @error('email')
@@ -30,7 +33,7 @@
             </div>
 
             <div class="field">
-              <label class="label">Пароль</label>
+              <label class="label is-small">Пароль</label>
               <div class="control">
                 <input name="password" class="input" type="password" placeholder="********">
               </div>

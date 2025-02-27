@@ -4,5 +4,18 @@
         border-radius: $border_rad;
         margin-bottom: 20px;
         border: 1px solid $gray_border_color;
+        display: flex;
+        gap:20px;
+        justify-content: space-between;
+
+    }
+}
+
+@media (max-width:680px) {
+
+    .flat_edit_window {
+        .flat_modal_data {
+            flex-direction: column;
+        }
     }
 }

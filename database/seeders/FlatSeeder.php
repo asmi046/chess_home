@@ -29,6 +29,8 @@ class FlatSeeder extends Seeder
             if (rand(0,1))
             {
                 DB::table("fixations")->insertGetId([
+                    'created_at' => now(),
+                    'updated_at' => now(),
                    'user_id' => rand(1,3),
                    'flat_id' => $flatID,
                    'type' => (rand(0,1))?"Забронирована":"Продана",
@@ -48,11 +50,13 @@ class FlatSeeder extends Seeder
             if (rand(0,1))
             {
                 DB::table("fixations")->insertGetId([
-                   'user_id' => rand(1,3),
-                   'flat_id' => $flatID,
-                   'type' => (rand(0,1))?"Забронирована":"Продана",
-                   'client_name' => 'Иванов',
-                   'price' => $item['price_total'],
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                    'user_id' => rand(1,3),
+                    'flat_id' => $flatID,
+                    'type' => (rand(0,1))?"Забронирована":"Продана",
+                    'client_name' => 'Иванов',
+                    'price' => $item['price_total'],
                 ]);
             }
         }
@@ -67,6 +71,8 @@ class FlatSeeder extends Seeder
             if (rand(0,1))
             {
                 DB::table("fixations")->insertGetId([
+                    'created_at' => now(),
+                    'updated_at' => now(),
                    'user_id' => rand(1,3),
                    'flat_id' => $flatID,
                    'type' => (rand(0,1))?"Забронирована":"Продана",

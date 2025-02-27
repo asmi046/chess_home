@@ -66,9 +66,22 @@
                 box-shadow: $box_shadow;
                 padding: 10px;
 
+
+
                 .head {
                     display: flex;
                     justify-content: space-between;
+
+                    .flat_number {
+                        width:18px;
+                        height: 15px;
+                        line-height: 15px;
+                        border-radius: 3px;
+                        background-color: $main_color;
+                        text-align: center;
+                        color:white;
+                        box-shadow: $box_shadow;
+                    }
 
                     .main_fixation {
                         width:10px;
@@ -77,6 +90,7 @@
                         background-color: lime;
                         box-shadow: $box_shadow;
                         margin: auto 0 auto 10px;
+
                     }
                 }
 
