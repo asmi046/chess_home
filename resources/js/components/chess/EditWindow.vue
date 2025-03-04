@@ -88,11 +88,11 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
     var actionSuccess = ref(true)
 
     var fixationData = ref({
-        client_name:"",
-        client_phone:"",
-        ddu:"",
-        price: (props.flat)?props.flat.price_total:"",
-        comment:"",
+        client_name:null,
+        client_phone:null,
+        ddu:null,
+        price: (props.flat)?props.flat.price_total:null,
+        comment:null,
     })
 
     const getActionList = () => {
@@ -136,14 +136,14 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
     }
 
     const fixationAction = () => {
-
+        console.log(fixationData.value);
         if (action.value == "Бронировать") {
-            if (fixationData.value.client_name == "")
+            if (fixationData.value.client_name == null)
             {
                 alert("Поле 'Имя' клиента должно быть заполнено")
                 return;
             }
-            if (fixationData.value.client_name == "")
+            if (fixationData.value.client_name == null)
             {
                 alert("Поле 'Телефон' должно быть заполнено")
                 return;
@@ -151,24 +151,24 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
         }
 
         if (action.value == "Продать") {
-            if (fixationData.value.client_name == "")
+            if (fixationData.value.client_name == null)
             {
                 alert("Поле 'Имя' клиента должно быть заполнено")
                 return;
             }
-            if (fixationData.value.client_name == "")
+            if (fixationData.value.client_name == null)
             {
                 alert("Поле 'Телефон' должно быть заполнено")
                 return;
             }
 
-            if (fixationData.value.ddu == "")
+            if (fixationData.value.ddu == null)
             {
                 alert("Поле 'ДДУ' должно быть заполнено")
                 return;
             }
 
-            if (fixationData.value.price == "")
+            if (fixationData.value.price == null)
             {
                 alert("Поле 'Цена' должно быть заполнено")
                 return;
@@ -228,11 +228,11 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
             finishAction.value = false;
             actionMeaasge.value = "";
             fixationData.value = {
-                client_name:"",
-                client_phone:"",
-                ddu:"",
-                price: (props.flat)?props.flat.price_total:"",
-                comment:"",
+                client_name:null,
+                client_phone:null,
+                ddu:null,
+                price: (props.flat)?props.flat.price_total:null,
+                comment:null,
             }
         }
 
