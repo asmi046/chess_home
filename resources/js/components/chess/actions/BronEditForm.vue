@@ -16,7 +16,7 @@
                 <label class="label is-small">Телефон клиента<sup>*</sup></label>
                 <div class="control">
                     <input
-                    v-mask="{mask: '+7 (NNN) NNN-NN-NN', model: 'cpf' }"
+                    v-mask="{mask: '+7(NNN)NNN-NN-NN', model: 'cpf' }"
                     v-model="model.client_phone" class="input is-small" type="text" placeholder="+7 (___) ___-__-__">
                 </div>
             </div>

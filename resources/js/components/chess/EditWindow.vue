@@ -136,14 +136,16 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
     }
 
     const fixationAction = () => {
-        console.log(fixationData.value);
-        if (action.value == "Бронировать") {
+        const rt = /\+\d{1}\(\d{3}\)\d{3}-\d{2}-\d{2}/g
+
+
+        if ((action.value == "Бронировать")||(action.value == "Редактировать бронь")) {
             if (fixationData.value.client_name == null)
             {
                 alert("Поле 'Имя' клиента должно быть заполнено")
                 return;
             }
-            if (fixationData.value.client_name == null)
+            if (rt.test(fixationData.value.client_phone) == false)
             {
                 alert("Поле 'Телефон' должно быть заполнено")
                 return;
@@ -156,7 +158,7 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
                 alert("Поле 'Имя' клиента должно быть заполнено")
                 return;
             }
-            if (fixationData.value.client_name == null)
+            if (rt.test(fixationData.value.client_phone) == false)
             {
                 alert("Поле 'Телефон' должно быть заполнено")
                 return;

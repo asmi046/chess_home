@@ -10,6 +10,6 @@ use App\Http\Controllers\ChessController;
     Route::middleware('auth')->group(function () {
         Route::get('/dashboard', [IndexController::class, "index"])->name('home');
         Route::get('/cabinet', [IndexController::class, "cabinet"])->name('cabinet');
-        Route::get('/log', [LogController::class, "index"])->name('log');
+        Route::get('/events_log', [LogController::class, "index"])->name('log');
         Route::get('/stat', [ChessController::class, "stat"])->name('stat');
     });

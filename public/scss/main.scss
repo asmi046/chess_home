@@ -162,6 +162,17 @@ sup {
     font-size: 18px;
 }
 
+.field {
+    .error {
+        background-color: red;
+        color:white;
+        padding: 2px 10px;
+        border-radius: 5px;
+        display: inline-flex;
+        margin-top: 5px;
+    }
+}
+
 @media (max-width:768px) {
     .user_icon_menu {
         margin: 0;
