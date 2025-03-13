@@ -62,6 +62,8 @@
     import Flat from './Flat.vue'
     import EditWindow from './EditWindow.vue'
 
+    const user_data = window.Auth
+
     var loadet = ref(true)
     var sectionList = ref([])
     var selectSection = ref(0)
@@ -106,6 +108,7 @@
     }
 
     const selectFlat = (flat) => {
+        if (user_data.user.rang != 'Администратор' ) return;
         selectedFlat.value = flat
         showEdit.value = true;
     }
