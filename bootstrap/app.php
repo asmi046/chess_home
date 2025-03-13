@@ -25,7 +25,7 @@ return Application::configure(basePath: dirname(__DIR__))
         }
     )
     ->withSchedule(function (Schedule $schedule) {
-        $schedule->command('chess:clear-fixation')->daily();
+        // $schedule->command('chess:clear-fixation')->daily();
     })
     ->withMiddleware(function (Middleware $middleware) {
         //
