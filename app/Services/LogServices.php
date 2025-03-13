@@ -18,6 +18,7 @@ class LogServices {
             'user_phone' => auth()->user()->phone ?? "+7 (000) 000-00-00",
         ];
 
+
         if ($flat) {
             $adet_data['section_id'] = $flat->section->id ?? null;
             $adet_data['section_name'] = $flat->section->name ?? null;

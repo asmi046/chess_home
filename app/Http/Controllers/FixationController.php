@@ -18,7 +18,6 @@ class FixationController extends Controller
         $action = $request->input('action');
         $flat_id = $request->input('flat_id');
         $flat = Flat::where('id', $flat_id)->firstOrFail();
-        $ls->write(action:$action, ip:$request->ip(), flat:$flat);
 
         $adding_data = [
             'user_id' => $flat->fixation->user_id ?? auth()->user()->id,
@@ -34,10 +33,17 @@ class FixationController extends Controller
         if ($action === "Бронировать") $adding_data['type'] = "Забронирована";
         if ($action === "Продать") $adding_data['type'] = "Продана";
 
+        $returned = [];
         if ((($action === "Продать") || ($action === "Редактировать бронь")) && $flat->fixation)
-            return $flat->fixation()->update($adding_data);
+            $returned = $flat->fixation()->update($adding_data);
         else
-            return $flat->fixation()->create($adding_data);
+            $returned = $flat->fixation()->create($adding_data);
+
+
+        $flat->fixation = $flat->fixation()->first();
+        $ls->write(action:$action, ip:$request->ip(), flat:$flat);
+
+        return $returned;
     }
 
     public function clear_fixation(Request $request, LogServices $ls) {
