@@ -20,29 +20,43 @@
                     <div class="select is-primary is-small">
                         <select name="event_name">
                             <option value="0"  disabled selected>Выберите тип события</option>
-                            @foreach ($filter['events'] as $key => $item)
-                                <option @selected(request('event_name') === $key) value="{{$key}}"> {{ $key }} </option>
-                            @endforeach
+                            @if (isset($filter['events']))
+                                @foreach ($filter['events'] as $key => $item)
+                                    <option @selected(request('event_name') === $key) value="{{$key}}"> {{ $key }} </option>
+                                @endforeach
+                            @endif
                         </select>
                     </div>
 
                     <div class="select is-primary is-small">
                         <select name="user_id">
                             <option value="0" disabled selected>Выберите пользователя</option>
-                            @foreach ($filter['users'] as $key => $item)
-                                <option @selected(request('user_id') === $item) value="{{$item}}"> {{ $key }} </option>
-                            @endforeach
+                            @if (isset($filter['users']))
+                                @foreach ($filter['users'] as $key => $item)
+                                    <option @selected(request('user_id') === $item) value="{{$item}}"> {{ $key }} </option>
+                                @endforeach
+                            @endif
                         </select>
                     </div>
 
                     <div class="select is-primary is-small">
                         <select name="section_id">
                             <option value="0" disabled selected>Выберите секцию</option>
-                            @foreach ($filter['sections'] as $key => $item)
-                                <option @selected(request('section_id') === $item) value="{{$item}}"> {{ $key }} </option>
-                            @endforeach
+                            @if (isset($filter['users']))
+                                @foreach ($filter['sections'] as $key => $item)
+                                    <option @selected(request('section_id') === $item) value="{{$item}}"> {{ $key }} </option>
+                                @endforeach
+                            @endif
                         </select>
                     </div>
+
+                    <input
+                        class="input is-small"
+                        type="text"
+                        name="flat_number"
+                        value="{{ request('flat_number') }}"
+                        placeholder="№ квартиры"
+                    />
 
                     <div class="control">
                         <a href="{{ route('log') }}" class="button is-warning is-small">Сбросить</a>

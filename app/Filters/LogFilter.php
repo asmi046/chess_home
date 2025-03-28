@@ -22,6 +22,12 @@ class LogFilter extends QueryFilter {
         }
     }
 
+    public function flat_number($flat_number) {
+        if (!empty($flat_number)) {
+            $this->builder->where("flat_number",  $flat_number);
+        }
+    }
+
     // public function event_name($event_name) {
     //     if (!empty($event_name)) {
     //         $mserch = "%".$event_name."%";
