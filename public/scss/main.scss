@@ -173,6 +173,14 @@ sup {
     }
 }
 
+.d-flex {
+    display: flex;
+}
+
+.checbox_flex {
+    margin: auto auto auto 0;
+}
+
 @media (max-width:768px) {
     .user_icon_menu {
         margin: 0;

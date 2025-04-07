@@ -15,6 +15,7 @@ class Fixation extends Model
         'client_phone',
         'comment',
         'ddu',
+        'no_pay',
         'price',
     ];
 

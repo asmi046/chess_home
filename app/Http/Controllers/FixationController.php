@@ -20,12 +20,13 @@ class FixationController extends Controller
         $flat = Flat::where('id', $flat_id)->firstOrFail();
 
         $adding_data = [
-            'user_id' => $flat->fixation->user_id ?? auth()->user()->id,
+            'user_id' => $request->input('user_id') ?? $flat->fixation->user_id ?? auth()->user()->id,
             'flat_id' => $flat_id,
             'client_name' => $request->input('client_name'),
             'client_phone' => $request->input('client_phone'),
             'comment' => $request->input('comment'),
             'ddu' => $request->input('ddu'),
+            'no_pay' => $request->input('no_pay'),
             'price' => $request->input('price'),
         ];
 

@@ -87,13 +87,38 @@
                         width:10px;
                         height:10px;
                         border-radius: 10px;
-                        background-color: lime;
+                        background-color: darkcyan;
                         box-shadow: $box_shadow;
                         margin: auto 0 auto 10px;
 
                     }
+
+                    .no_pay_fixation {
+                        width:10px;
+                        height:10px;
+                        border-radius: 10px;
+                        background-color: darkred;
+                        box-shadow: $box_shadow;
+                        margin: auto 0 auto 10px;
+
+                    }
+
+                    .comment_fixation {
+                        width:10px;
+                        height:10px;
+                        border-radius: 10px;
+                        background-color: orange;
+                        box-shadow: $box_shadow;
+                        margin: auto 0 auto 10px;
+
+                    }
+
                 }
 
+                .type {
+                    text-align: right;
+                    margin: 10px 0 0 0;
+                }
                 .area {
                     display: flex;
                     flex-direction: column;

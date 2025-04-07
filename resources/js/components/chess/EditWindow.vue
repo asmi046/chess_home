@@ -88,6 +88,8 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
     var actionSuccess = ref(true)
 
     var fixationData = ref({
+        no_pay:false,
+        user_id:0,
         client_name:null,
         client_phone:null,
         ddu:null,
@@ -150,6 +152,12 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
                 alert("Поле 'Телефон' должно быть заполнено")
                 return;
             }
+
+            if ( fixationData.value.user_id == 0 )
+            {
+                alert("Поле 'Менеджер' должно быть заполнено")
+                return;
+            }
         }
 
         if (action.value == "Продать") {
@@ -173,6 +181,12 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
             if (fixationData.value.price == null)
             {
                 alert("Поле 'Цена' должно быть заполнено")
+                return;
+            }
+
+            if ( fixationData.value.user_id == 0 )
+            {
+                alert("Поле 'Менеджер' должно быть заполнено")
                 return;
             }
         }
@@ -214,6 +228,8 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
         if (!props.flat.fixation) return
         if ((action.value == "Продать") || (action.value == "Редактировать бронь") ) {
             fixationData.value = {
+                no_pay:(props.flat.fixation.no_pay)?true:false,
+                user_id:props.flat.fixation.user_id,
                 client_name: props.flat.fixation.client_name,
                 client_phone: props.flat.fixation.client_phone,
                 ddu: props.flat.fixation.ddu,
@@ -230,6 +246,8 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
             finishAction.value = false;
             actionMeaasge.value = "";
             fixationData.value = {
+                no_pay:true,
+                user_id:0,
                 client_name:null,
                 client_phone:null,
                 ddu:null,

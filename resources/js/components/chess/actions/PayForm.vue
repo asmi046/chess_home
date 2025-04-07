@@ -1,4 +1,20 @@
 <template>
+
+    <div class="columns">
+        <div class="column d-flex">
+            <label class="checkbox checbox_flex"> <input type="checkbox" v-model="model.no_pay" />  Бесплатная бронь</label>
+        </div>
+
+        <div class="column">
+            <div class="field">
+                <label class="label is-small">Менеджер<sup>*</sup></label>
+                <div class="control">
+                    <manager-list v-model="model.user_id" ></manager-list>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="columns">
         <div class="column">
             <div class="field">
@@ -55,6 +71,8 @@
 </template>
 
 <script setup>
+    import ManagerList from './ManagerList.vue'
+
     const props = defineProps({
         flat:Object,
         action:Function

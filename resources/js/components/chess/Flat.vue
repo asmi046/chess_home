@@ -8,9 +8,15 @@
         }" class="cell cell_flat">
     <div class="head">
         <span class="flat_number">{{ props.flat.number  }}</span>
-        <span class="flat_type">{{ props.flat.type }}</span>
         <span v-show="props.flat.fixation && props.flat.fixation.user_id == user_data.user.id" class="main_fixation" title="Забронирована/продана Вами"></span>
+        <span v-show="props.flat.fixation && props.flat.fixation.no_pay" class="no_pay_fixation" title="Бесплатная бронь"></span>
+        <span v-show="props.flat.fixation && props.flat.fixation.comment" class="comment_fixation" title="Есть комментарий"></span>
     </div>
+
+    <div class="type">
+        {{ props.flat.type }}
+    </div>
+
     <div class="area">
         <span>{{ props.flat.area1 }}/{{ props.flat.area2 }}/{{ props.flat.area3 }}</span>
     </div>
