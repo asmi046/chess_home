@@ -108,7 +108,7 @@
     }
 
     const selectFlat = (flat) => {
-        if (user_data.user.rang != 'Администратор' ) return;
+        // if (user_data.user.rang != 'Администратор' ) return;
         selectedFlat.value = flat
         console.log(flat)
         showEdit.value = true;

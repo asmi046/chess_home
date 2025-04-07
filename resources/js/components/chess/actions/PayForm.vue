@@ -2,7 +2,10 @@
 
     <div class="columns">
         <div class="column d-flex">
-            <label class="checkbox checbox_flex"> <input type="checkbox" v-model="model.no_pay" />  Бесплатная бронь</label>
+            <div class="checbox_flex">
+                <label class="checkbox"> <input type="checkbox" v-model="model.no_pay" />  Бесплатная бронь</label>
+                <label class="checkbox"> <input type="checkbox" v-model="model.no_pact" />  Есть договор</label>
+            </div>
         </div>
 
         <div class="column">

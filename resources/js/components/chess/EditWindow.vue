@@ -31,7 +31,7 @@
                         </div>
                     </div>
 
-                    <div v-show="!finishAction" class="action_wrapper">
+                    <div v-show="!finishAction && user_data.user.rang == 'Администратор'" class="action_wrapper">
                         <div class="field">
                         <label class="label is-small">Выберите действие</label>
                             <div  class="select is-success is-small">
@@ -89,6 +89,7 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
 
     var fixationData = ref({
         no_pay:false,
+        no_pact:false,
         user_id:0,
         client_name:null,
         client_phone:null,
@@ -228,6 +229,7 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
         if (!props.flat.fixation) return
         if ((action.value == "Продать") || (action.value == "Редактировать бронь") ) {
             fixationData.value = {
+                no_pact:(props.flat.fixation.no_pact)?true:false,
                 no_pay:(props.flat.fixation.no_pay)?true:false,
                 user_id:props.flat.fixation.user_id,
                 client_name: props.flat.fixation.client_name,
@@ -246,7 +248,8 @@ import ClearBronRuk from './actions/ClearBronRuk.vue';
             finishAction.value = false;
             actionMeaasge.value = "";
             fixationData.value = {
-                no_pay:true,
+                no_pact:false,
+                no_pay:false,
                 user_id:0,
                 client_name:null,
                 client_phone:null,

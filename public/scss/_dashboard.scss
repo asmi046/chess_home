@@ -100,7 +100,15 @@
                         background-color: darkred;
                         box-shadow: $box_shadow;
                         margin: auto 0 auto 10px;
+                    }
 
+                    .no_pact_fixation {
+                        width:10px;
+                        height:10px;
+                        border-radius: 10px;
+                        background-color: darkorchid;
+                        box-shadow: $box_shadow;
+                        margin: auto 0 auto 10px;
                     }
 
                     .comment_fixation {

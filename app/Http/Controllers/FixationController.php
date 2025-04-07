@@ -27,6 +27,7 @@ class FixationController extends Controller
             'comment' => $request->input('comment'),
             'ddu' => $request->input('ddu'),
             'no_pay' => $request->input('no_pay'),
+            'no_pact' => $request->input('no_pact'),
             'price' => $request->input('price'),
         ];
 

@@ -10,7 +10,9 @@
         <span class="flat_number">{{ props.flat.number  }}</span>
         <span v-show="props.flat.fixation && props.flat.fixation.user_id == user_data.user.id" class="main_fixation" title="Забронирована/продана Вами"></span>
         <span v-show="props.flat.fixation && props.flat.fixation.no_pay" class="no_pay_fixation" title="Бесплатная бронь"></span>
+        <span v-show="props.flat.fixation && props.flat.fixation.no_pact" class="no_pact_fixation" title="Есть договор"></span>
         <span v-show="props.flat.fixation && props.flat.fixation.comment" class="comment_fixation" title="Есть комментарий"></span>
+
     </div>
 
     <div class="type">

@@ -16,6 +16,7 @@ class Fixation extends Model
         'comment',
         'ddu',
         'no_pay',
+        'no_pact',
         'price',
     ];
 
