@@ -20,6 +20,10 @@ class Fixation extends Model
         'price',
     ];
 
+    public $with = [
+        'user',
+    ];
+
     public function flat(): BelongsTo
     {
         return $this->belongsTo(Flat::class);

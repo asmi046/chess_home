@@ -28,6 +28,7 @@
                             <p><strong>ДДУ:</strong> {{ props.flat.fixation.ddu }}</p>
                             <p><strong>Цена:</strong> {{ props.flat.fixation.price }}</p>
                             <p><strong>Комментарий:</strong> {{ props.flat.fixation.comment }}</p>
+                            <p><strong>Менеджер:</strong> {{ props.flat.fixation.user.name }}</p>
                         </div>
                     </div>
 
