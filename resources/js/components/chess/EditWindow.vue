@@ -20,7 +20,7 @@
                         </div>
 
                         <div
-                            v-if="props.flat.fixation && (user_data.user.rang == 'Администратор' || user_data.user.id == props.flat.fixation.user_id )"
+                            v-if="props.flat.fixation && (user_data.user.rang == 'Администратор' || user_data.user.email == 'Reznikova2007@yandex.ru' || user_data.user.id == props.flat.fixation.user_id )"
                             class="client"
                         >
                             <p><strong>Ф.И.О:</strong> {{ props.flat.fixation.client_name }}</p>
