@@ -17,9 +17,10 @@ class DatabaseSeeder extends Seeder
             [
                 UserSeeder::class,
                 SectionSeeder::class,
-                // SectionSeederKursk::class,
+                SectionSeederKursk::class,
                 FlatSeeder::class,
-                // FlatSeederKursk::class,
+                FlatSeederKursk::class,
+                ParcingSeeder::class,
             ]
         );
 

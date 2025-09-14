@@ -29,4 +29,14 @@ class ChessServices {
         return $result;
     }
 
+    public function sort_parking_in_chess($list) {
+        $result = [];
+
+        foreach ($list as $item) {
+            $result[$item->type][] = $item;
+        }
+
+        return $result;
+    }
+
 }

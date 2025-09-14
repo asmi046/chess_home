@@ -33,6 +33,7 @@
     gap: $gap_dashboard;
 
 
+
     .flor {
         display: flex;
         gap: $gap_dashboard;
@@ -139,6 +140,20 @@
                     text-align: right;
                 }
             }
+            &.cell_parking {
+                width:15%;
+                .head .flat_number {
+                    width: 30px;
+                }
+            }
+        }
+
+        &.flor_parking {
+            flex-direction: column;
+            .cell_flor_index span {
+                font-size: 1.2em;
+                font-weight: bold;
+            }
         }
     }
 
@@ -151,7 +166,13 @@
     .dashboard .flor {
         padding-bottom: 20px;
         margin-bottom: 20px;
-        border-bottom: 1px solid $gray_border_color
+        border-bottom: 1px solid $gray_border_color;
+
+        .cell {
+            &.cell_parking {
+                width:23%;
+            }
+        }
     }
 
 }
@@ -170,6 +191,12 @@
             min-height: 30px;
             font-size: 20px;
             font-weight: bold;
+        }
+
+        .cell {
+            &.cell_parking {
+                width:45%;
+            }
         }
 
     }

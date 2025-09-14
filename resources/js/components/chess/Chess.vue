@@ -42,15 +42,16 @@
             <h2 class="empty_h2" v-show="flatList.length == 0 && loadet == false">Выберите секцию для отображения шахматки</h2>
 
             <div class="dashboard">
-                <div v-for="(item, key, index) in flatList" :key="index" class="flor">
+                <div v-for="(item, key, index) in flatList" :key="index" class="flor" :class="{'flor_parking': selectSectionType === 'Паркинг', 'flor_flat': selectSectionType === 'Квартира'}" >
                     <div class="cell cell_flor_index">
                         <span>{{ key }}</span>
                     </div>
-                    <div class="flor_flat_list">
+                    <div v-if="selectSectionType === 'Квартиры'" class="flor_flat_list">
                         <Flat @click.prevent="selectFlat(flat)" v-for="(flat, key, index) in item" :key="index" :flat="flat"></Flat>
                     </div>
-
-
+                    <div v-if="selectSectionType === 'Паркинг'" class="flor_flat_list">
+                        <Parking @click.prevent="selectFlat(flat)" v-for="(flat, key, index) in item" :key="index" :flat="flat"></Parking>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,12 +62,14 @@
     import { ref, watch } from 'vue'
     import Flat from './Flat.vue'
     import EditWindow from './EditWindow.vue'
+    import Parking from './Parking.vue'
 
     const user_data = window.Auth
 
     var loadet = ref(true)
     var sectionList = ref([])
     var selectSection = ref(0)
+    var selectSectionType = ref('')
     var selectedFlat = ref(null)
     var showEdit = ref(false)
 
@@ -87,12 +90,15 @@
     }
 
     watch(selectSection, (newV, oldV) => {
+        selectSectionType.value = sectionList.value[newV-1].type
+        console.log(selectSectionType.value);
+
         getChessList()
     })
 
     const getChessList = () => {
 
-        console.log(selectSection.value)
+
 
         loadet.value = true
         axios.get('/get_chess_data_by_section/'+selectSection.value)

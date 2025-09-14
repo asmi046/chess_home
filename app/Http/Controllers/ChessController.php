@@ -12,7 +12,11 @@ class ChessController extends Controller
     public function get_chess_data_by_section(string $section_id, ChessServices $cs) {
         $section = Section::with('flats')->where('id', $section_id)->first();
         if (!$section) abort(419, "Секция не найдена");
-        return $cs->sort_flats_in_chess($section->flats);
+        if ($section->type === "Паркинг") {
+            return $cs->sort_parking_in_chess($section->flats);
+        } else {
+            return $cs->sort_flats_in_chess($section->flats);
+        }
     }
 
     public function stat(Request $request) {
