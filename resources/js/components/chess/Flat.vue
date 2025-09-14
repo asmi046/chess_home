@@ -2,10 +2,11 @@
 
 <div
     :class="{
+        'h_pact': props.flat.fixation && props.flat.fixation.no_pact,
         'h_rezerv': props.flat.fixation && props.flat.fixation.type === 'Забронирована',
         'h_rezerv_ruk': props.flat.fixation && props.flat.fixation.type === 'Бронь руководителя',
-        'h_sales': props.flat.fixation && props.flat.fixation.type === 'Продана',
-        'h_pact': props.flat.fixation && props.flat.fixation.no_pact
+        'h_sales': props.flat.fixation && props.flat.fixation.type === 'Продана'
+
         }" class="cell cell_flat">
     <div class="head">
         <span class="flat_number">{{ props.flat.number  }}</span>
