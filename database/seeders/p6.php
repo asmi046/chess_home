@@ -263,13 +263,13 @@ $data6 = [
     ['floor'=>-1,'number'=>79,'type'=>"Машиноместо",'area1'=>21.1,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>2468700],
     ['floor'=>-1,'number'=>80,'type'=>"Машиноместо",'area1'=>25.4,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>2971800],
     ['floor'=>-1,'number'=>81,'type'=>"Машиноместо",'area1'=>17.0,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>1989000],
-    ['floor'=>-1,'number'=>82,'type'=>"Паркоместо для мотоцикла",'area1'=>4.8,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>561600],
-    ['floor'=>-1,'number'=>83,'type'=>"Паркоместо для мотоцикла",'area1'=>4.6,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>538200],
-    ['floor'=>-1,'number'=>84,'type'=>"Паркоместо для мотоцикла",'area1'=>6.1,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>713700],
-    ['floor'=>-1,'number'=>85,'type'=>"Паркоместо для мотоцикла",'area1'=>9.6,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>1123200],
-    ['floor'=>-1,'number'=>86,'type'=>"Паркоместо для мотоцикла",'area1'=>8.4,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>982800],
-    ['floor'=>-1,'number'=>87,'type'=>"Паркоместо для мотоцикла",'area1'=>6.9,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>807300],
-    ['floor'=>-1,'number'=>88,'type'=>"Паркоместо для мотоцикла",'area1'=>6.1,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>713700],
-    ['floor'=>-1,'number'=>89,'type'=>"Паркоместо для мотоцикла",'area1'=>5.8,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>678600],
-    ['floor'=>-1,'number'=>90,'type'=>"Паркоместо для мотоцикла",'area1'=>10.3,'area2'=>0,'area3'=>0,'price_per_meter'=>117000,'price_total'=>1205100]
+    ['floor'=>-1,'number'=>82,'type'=>"Паркоместо для мотоцикла",'area1'=>4.8,'area2'=>0,'area3'=>0,'price_per_meter'=>114583,'price_total'=>550000],
+    ['floor'=>-1,'number'=>83,'type'=>"Паркоместо для мотоцикла",'area1'=>4.6,'area2'=>0,'area3'=>0,'price_per_meter'=>108696,'price_total'=>500000],
+    ['floor'=>-1,'number'=>84,'type'=>"Паркоместо для мотоцикла",'area1'=>6.1,'area2'=>0,'area3'=>0,'price_per_meter'=>98360,'price_total'=>600000],
+    ['floor'=>-1,'number'=>85,'type'=>"Паркоместо для мотоцикла",'area1'=>9.6,'area2'=>0,'area3'=>0,'price_per_meter'=>72916,'price_total'=>700000],
+    ['floor'=>-1,'number'=>86,'type'=>"Паркоместо для мотоцикла",'area1'=>8.4,'area2'=>0,'area3'=>0,'price_per_meter'=>77381,'price_total'=>650000],
+    ['floor'=>-1,'number'=>87,'type'=>"Паркоместо для мотоцикла",'area1'=>6.9,'area2'=>0,'area3'=>0,'price_per_meter'=>94203,'price_total'=>650000],
+    ['floor'=>-1,'number'=>88,'type'=>"Паркоместо для мотоцикла",'area1'=>6.1,'area2'=>0,'area3'=>0,'price_per_meter'=>83333,'price_total'=>650000],
+    ['floor'=>-1,'number'=>89,'type'=>"Паркоместо для мотоцикла",'area1'=>5.8,'area2'=>0,'area3'=>0,'price_per_meter'=>100000,'price_total'=>580000],
+    ['floor'=>-1,'number'=>90,'type'=>"Паркоместо для мотоцикла",'area1'=>10.3,'area2'=>0,'area3'=>0,'price_per_meter'=>72816,'price_total'=>750000]
 ];
