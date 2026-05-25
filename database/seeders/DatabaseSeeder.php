@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
                 FlatSeeder::class,
                 FlatSeederKursk::class,
                 ParcingSeeder::class,
+                OwerFlatInformationSeeder::class,
             ]
         );
 

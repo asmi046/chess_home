@@ -3,9 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Flat extends Model
 {
@@ -14,6 +13,7 @@ class Flat extends Model
         'floor',
         'number',
         'type',
+        'ower_flat_type',
         'area1',
         'area2',
         'area3',
@@ -21,7 +21,7 @@ class Flat extends Model
         'price_total',
     ];
 
-    protected $with = ['fixation', 'section'];
+    protected $with = ['fixation', 'section', 'owerFlatInformation'];
 
     public function section(): BelongsTo
     {
@@ -31,5 +31,10 @@ class Flat extends Model
     public function fixation(): HasOne
     {
         return $this->hasOne(Fixation::class);
+    }
+
+    public function owerFlatInformation(): BelongsTo
+    {
+        return $this->belongsTo(OwerFlatInformation::class, 'ower_flat_type', 'type');
     }
 }
