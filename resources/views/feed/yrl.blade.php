@@ -4,7 +4,8 @@
         @php
             $flatInfo = $flat->owerFlatInformation;
             $gallery = $flatInfo?->gallery ?? [];
-            $firstImage = $gallery[0]['path'] ?? null;
+            $rooms = preg_replace('/\D+/', '', (string) $flat->type);
+            $rooms = $rooms !== '' ? $rooms : '1';
         @endphp
         <offer internal-id="{{ $flat->id }}">
             <type>продажа</type>
@@ -18,10 +19,6 @@
                 <locality-name>{{ $flatInfo?->city }}</locality-name>
                 <address>{{ $flatInfo?->address }}</address>
             </location>
-            <sales-agent>
-                <name>Отдел продаж</name>
-                <category>agency</category>
-            </sales-agent>
             <price>
                 <value>{{ (int) round((float) $flat->price_total) }}</value>
                 <currency>RUR</currency>
@@ -31,10 +28,12 @@
             <unit>кв.м</unit>
             </area>
             <floor>{{ $flat->floor }}</floor>
-            <rooms>{{ $flat->type }}</rooms>
-            @if ($firstImage)
-                <image>{{ asset('flat_data/' . ltrim($firstImage, '/')) }}</image>
-            @endif
+            <rooms>{{ $rooms }}</rooms>
+            @foreach ($gallery as $photo)
+                @if (!empty($photo['path']))
+                    <image>{{ asset('flat_data/' . ltrim($photo['path'], '/')) }}</image>
+                @endif
+            @endforeach
             <description>{{ 'Квартира ' . $flat->type . ' площадью ' . $flat->area3 . ' м2' }}</description>
         </offer>
     @endforeach
