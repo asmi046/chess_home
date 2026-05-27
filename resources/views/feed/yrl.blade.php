@@ -1,6 +1,6 @@
 <?= '<?xml version="1.0" encoding="UTF-8"?>' ?>
 
-<realty-feed generated-at="{{ now()->toAtomString() }}">
+<realty-feed xmlns="http://webmaster.yandex.ru/schemas/feed/realty/2010-06" generated-at="{{ now()->toAtomString() }}">
     @foreach ($flats as $flat)
         @php
             $flatInfo = $flat->owerFlatInformation;
