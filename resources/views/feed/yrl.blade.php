@@ -14,6 +14,12 @@
             <property-type>жилая</property-type>
             <category>квартира</category>
             <url>{{ route('public_flat', ['id' => $flat->id]) }}</url>
+
+            <sales-agent>
+                <organization>ООО «СЗ «БЕРЕГ ГУРЗУФА»</organization>
+                <category>developer</category>
+                <phone>+79282085752</phone>
+            </sales-agent>
             <creation-date>{{ optional($flat->created_at)->toAtomString() }}</creation-date>
             <last-update-date>{{ $flat->updated_at ? optional($flat->updated_at)->toAtomString() : optional($flat->created_at)->toAtomString() }}</last-update-date>
             <location>
