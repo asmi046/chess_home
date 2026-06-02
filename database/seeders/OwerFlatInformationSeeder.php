@@ -45,7 +45,7 @@ class OwerFlatInformationSeeder extends Seeder
             $rows[] = [
                 'type' => $type,
                 'gallery' => json_encode($gallery, JSON_UNESCAPED_UNICODE),
-                'address' => 'Республика Крым, г. Ялта, пгт. Гурзуф, в районе Гурзуфской средней школы',
+                'address' => 'Республика Крым, Ялта, пос. Гурзуф, пер. Зелёный',
                 'city' => 'Гурзуф',
                 'country' => 'Россия',
                 'created_at' => now(),

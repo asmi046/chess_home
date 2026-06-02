@@ -27,6 +27,12 @@
                 <country>{{ $flatInfo?->country }}</country>
                 <locality-name>{{ $flatInfo?->city }}</locality-name>
                 <address>{{ $flatInfo?->address }}</address>
+                @if (!empty($flatInfo?->latitude))
+                    <latitude>{{ $flatInfo->latitude }}</latitude>
+                @endif
+                @if (!empty($flatInfo?->longitude))
+                    <longitude>{{ $flatInfo->longitude }}</longitude>
+                @endif
             </location>
             <price>
                 <value>{{ (int) round((float) $flat->price_total) }}</value>
