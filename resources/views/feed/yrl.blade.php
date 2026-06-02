@@ -13,6 +13,7 @@
             <type>продажа</type>
             <property-type>жилая</property-type>
             <category>квартира</category>
+            <floors-total>{{ $flat->section->floor_count }}</floors-total>
             <url>{{ route('public_flat', ['id' => $flat->id]) }}</url>
 
             <sales-agent>
