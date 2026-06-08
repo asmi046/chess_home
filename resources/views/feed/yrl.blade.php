@@ -13,6 +13,8 @@
             <type>продажа</type>
             <property-type>жилая</property-type>
             <category>квартира</category>
+            <building-state>construction</building-state>
+            <deal-status>ФЗ 214</deal-status>
             <floors-total>{{ $flat->section->floor_count }}</floors-total>
             <url>{{ route('public_flat', ['id' => $flat->id]) }}</url>
 
