@@ -15,6 +15,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/flat/{id}', [PublicFlatController::class, 'index'])->name('public_flat');
-Route::get('/feed/{sectionId?}', [FeedController::class, 'index'])
+Route::get('/feed_yrl_v_1/{sectionId?}', [FeedController::class, 'index'])
     ->whereNumber('sectionId')
     ->name('public_feed');
