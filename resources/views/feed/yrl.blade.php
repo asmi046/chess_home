@@ -9,7 +9,7 @@
             $rooms = preg_replace('/\D+/', '', (string) $flat->type);
             $rooms = $rooms !== '' ? $rooms : '1';
         @endphp
-        <offer internal-id="{{ $flat->id }}">
+        <offer internal-id="{{ $flat->id + 3 }}">
             <type>продажа</type>
             <property-type>жилая</property-type>
             <category>квартира</category>
