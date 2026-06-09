@@ -51,6 +51,13 @@
             $complexGallery = $buildPlanLinks($firstInfo?->gallery ?? []);
             $buildingId = $complexId;
             $buildingFloors = $complexFlats->max(fn($flat) => (int) ($flat->section?->floor_count ?? 0));
+            $builtYear = (int) now()->format('Y');
+            $readyQuarter = (int) ceil(((int) now()->format('n')) / 3);
+            $developerId = 1;
+            $developerName = 'ООО «СЗ «БЕРЕГ ГУРЗУФА»';
+            $developerPhone = '+79282085752';
+            $developerSite = config('app.url') ?: url('/');
+            $developerLogo = asset('img/logo.svg');
         @endphp
         <complex>
             <id>{{ $complexId }}</id>
@@ -72,6 +79,14 @@
                 <text>{{ 'Квартиры в продаже в ' . $complexName }}</text>
             </description_main>
 
+            <developer>
+                <id>{{ $developerId }}</id>
+                <name>{{ $developerName }}</name>
+                <phone>{{ $developerPhone }}</phone>
+                <site>{{ $developerSite }}</site>
+                <logo>{{ $developerLogo }}</logo>
+            </developer>
+
             <buildings>
                 <building>
                     <id>1</id>
@@ -84,6 +99,8 @@
                         <floors>{{ $buildingFloors }}</floors>
                     @endif
                     <building_state>unfinished</building_state>
+                    <built_year>{{ $builtYear }}</built_year>
+                    <ready_quarter>{{ $readyQuarter }}</ready_quarter>
 
                     <flats>
                         @foreach ($complexFlats as $flat)
