@@ -18,3 +18,7 @@ Route::get('/flat/{id}', [PublicFlatController::class, 'index'])->name('public_f
 Route::get('/feed_yrl_v_1/{sectionId?}', [FeedController::class, 'index'])
     ->whereNumber('sectionId')
     ->name('public_feed');
+
+Route::get('/feed_for_domclick/{sectionId?}', [FeedController::class, 'domClickFeed'])
+    ->whereNumber('sectionId')
+    ->name('public_feed_domclick');
