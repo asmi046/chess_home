@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::table('ower_flat_informations', function (Blueprint $table) {
             $table->string('dom_click_complex_id')->nullable()->after('longitude');
+            $table->string('complex_name')->nullable()->after('dom_click_complex_id');
         });
     }
 
@@ -23,6 +24,7 @@ return new class extends Migration
     {
         Schema::table('ower_flat_informations', function (Blueprint $table) {
             $table->dropColumn('dom_click_complex_id');
+            $table->dropColumn('complex_name');
         });
     }
 };

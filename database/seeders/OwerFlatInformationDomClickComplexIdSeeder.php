@@ -14,6 +14,7 @@ class OwerFlatInformationDomClickComplexIdSeeder extends Seeder
     {
         DB::table('ower_flat_informations')->update([
             'dom_click_complex_id' => '122005',
+            'complex_name' => 'Многофункциональный жилой комплекс «Берег Гурзуфа»',
             'updated_at' => now(),
         ]);
     }
