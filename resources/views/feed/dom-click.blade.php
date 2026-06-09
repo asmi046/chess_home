@@ -74,7 +74,7 @@
 
             <buildings>
                 <building>
-                    <id>{{ $buildingId }}</id>
+                    <id>1</id>
                     <fz_214>true</fz_214>
                     <name>{{ $complexName }}</name>
                     <latitude>{{ $complexLatitude }}</latitude>
