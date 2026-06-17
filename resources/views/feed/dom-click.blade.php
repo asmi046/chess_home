@@ -114,7 +114,7 @@
                             @endphp
                             <flat>
                                 <flat_id>{{ $flat->id }}</flat_id>
-                                <apartment>{{ $flat->number }}</apartment>
+                                <apartment>{{ $flat->id + $flat->number }}</apartment>
                                 <floor>{{ $flat->floor }}</floor>
                                 <room>{{ $roomCount }}</room>
                                 <plans>
