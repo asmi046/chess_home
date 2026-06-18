@@ -15,6 +15,10 @@
             <category>квартира</category>
             <building-state>unfinished</building-state>
             <deal-status>ФЗ 214</deal-status>
+
+            <yandex-building-id>{{ $flat->section->yn_project_id }}</yandex-building-id>
+            <yandex-house-id>{{ $flat->section->yn_section_id }}</yandex-house-id>
+
             <floors-total>{{ $flat->section->floor_count }}</floors-total>
             <url>{{ route('public_flat', ['id' => $flat->id]) }}</url>
 

@@ -14,8 +14,9 @@ class Section extends Model
         'area_total',
         'adress',
         'geo',
+        'yn_project_id',
+        'yn_section_id',
     ];
-
 
     public function flats(): HasMany
     {
